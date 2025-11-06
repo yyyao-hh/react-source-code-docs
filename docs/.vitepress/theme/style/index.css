@@ -1,0 +1,23 @@
+@import "./var.css";
+@import "./blur.css";
+@import './dark.css';
+
+.VPHero .image {
+  position: relative;
+  animation: littleNewJump 5s ease-in-out infinite;
+  transform-origin: bottom center;
+}
+
+@keyframes littleNewJump {
+  0%,
+  50%,
+  100% {
+    transform: rotate(0deg) translateY(0) scale(1);
+  }
+  25% {
+    transform: rotate(5deg) translateY(-6px) scale(1.05);
+  }
+  75% {
+    transform: rotate(-5deg) translateY(-6px) scale(1.05);
+  }
+}

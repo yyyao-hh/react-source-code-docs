@@ -3,16 +3,20 @@
 layout: home
 
 hero:
-  name: "react Source code"
+  name: "React Source code"
   text: "Learning react Source code"
+  textsuffix: Theme # 副标题文本后半部分
   tagline: My great project tagline
   actions:
     - theme: brand
-      text: Markdown Examples
+      text: 开始学习
       link: /markdown-examples
     - theme: alt
-      text: API Examples
+      text: 导航
       link: /api-examples
+  image:
+    src: /xin.svg
+    alt: React Logo
 
 features:
   - title: Feature A
@@ -23,3 +27,4 @@ features:
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 ---
 
+<HomeUnderline />
