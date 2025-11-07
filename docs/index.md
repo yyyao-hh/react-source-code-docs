@@ -5,7 +5,6 @@ layout: home
 hero:
   name: "React Source code"
   text: "Learning react Source code"
-  textsuffix: Theme # 副标题文本后半部分
   tagline: My great project tagline
   actions:
     - theme: brand

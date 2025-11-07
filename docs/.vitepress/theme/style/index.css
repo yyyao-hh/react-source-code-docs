@@ -1,22 +1,37 @@
 @import "./var.css";
 @import "./blur.css";
-@import './dark.css';
+@import "./dark.css";
 
-.VPHero .image {
-  position: relative;
-  animation: littleNewJump 5s ease-in-out infinite;
-  transform-origin: bottom center;
+:root {
+
+  /* 大屏小新跳动 */
+  @media (min-width: 960px) {
+    .VPHero .image {
+      position: relative;
+      animation: littleNewJump 5s ease-in-out infinite;
+      transform-origin: bottom center;
+    }
+  }
+
+  .VPHero.has-image .name,
+  .VPHero.has-image .text,
+  .VPHero.has-image .tagline {
+    margin: 0 auto;
+  }
 }
 
 @keyframes littleNewJump {
+
   0%,
   50%,
   100% {
     transform: rotate(0deg) translateY(0) scale(1);
   }
+
   25% {
     transform: rotate(5deg) translateY(-6px) scale(1.05);
   }
+
   75% {
     transform: rotate(-5deg) translateY(-6px) scale(1.05);
   }
